@@ -37,17 +37,23 @@ The following machine learning models were utilized in this challenge:
 
 **BalancedRandomForestClassifier Model**<br>
 <kbd>![BalancedRandomForestClassifier](Resources/RandomOversampler.png)<kbd>
-- The balanced accuracy score of the xxx model was xx.xx%
-- The precision of the high_risk credit scores was xx.xx% and the high-risk recall was xx.xx%, leading to a F1 score of xx.xx%.
-- The precision of the low_risk credit scores was xx.xx% and the low-risk recall was xx.xx%, leading to a F1 score of xx.xx%.<br><br>
+- The balanced accuracy score of the BalancedRandomForestClassifier model was 78.78%
+- The precision of the high_risk credit scores was 4% and the high-risk recall was 67%, leading to a F1 score of 7%.
+- The precision of the low_risk credit scores was 100% and the low-risk recall was 91%, leading to a F1 score of 95%.<br><br>
  
 **EasyEnsembleAdaBoostClassifier Model**<br>
 <kbd>![EasyEnsembleAdaBoostClassifier](Resources/EasyEnsembleClassifier.png)<kbd>
-- The balanced accuracy score of the xxx model was xx.xx%
-- The precision of the high_risk credit scores was xx.xx% and the high-risk recall was xx.xx%, leading to a F1 score of xx.xx%.
-- The precision of the low_risk credit scores was xx.xx% and the low-risk recall was xx.xx%, leading to a F1 score of xx.xx%.<br><br>
+- The balanced accuracy score of the EasyEnsembleAdaBoostClassifier model was 92.54%
+- The precision of the high_risk credit scores was 7% and the high-risk recall was 91%, leading to a F1 score of 14%.
+- The precision of the low_risk credit scores was 100% and the low-risk recall was 94%, leading to a F1 score of 97%.<br><br>
  
 
 ## Conclusions
 
-<kbd>![]()<kbd>
+ 
+Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
+ 
+ We see that 38.24% of the Amazon Vine reviews were rated 5 stars, whereas the unpaid Amazon reviews had 54.47% rated with 5 stars. We cannot conclude that the paid advertisements had a bias towards 5-star ratings based on this information. However, because the size of the paid pool of reviews is significantly smaller than the pool of all unpaid reviews, it would be a challenge to ascertain if a paid review presented negative bias.
+
+Future analysis should investigate the statistical distribution of all ratings, from 1- to 5-stars, between the paid and unpaid analyses to see if a pattern appears that indicates bias towards more positive ratings.
+
