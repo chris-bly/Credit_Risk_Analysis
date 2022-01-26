@@ -49,11 +49,4 @@ The following machine learning models were utilized in this challenge:
  
 
 ## Conclusions
-
- 
-Summary: Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. If you do not recommend any of the models, justify your reasoning.
- 
- We see that 38.24% of the Amazon Vine reviews were rated 5 stars, whereas the unpaid Amazon reviews had 54.47% rated with 5 stars. We cannot conclude that the paid advertisements had a bias towards 5-star ratings based on this information. However, because the size of the paid pool of reviews is significantly smaller than the pool of all unpaid reviews, it would be a challenge to ascertain if a paid review presented negative bias.
-
-Future analysis should investigate the statistical distribution of all ratings, from 1- to 5-stars, between the paid and unpaid analyses to see if a pattern appears that indicates bias towards more positive ratings.
-
+It appears that all six models exhibit very weak precision in identifying individuals who present a high credit risk. Because the vast majority of the individuals in this dataset are deemed low risk, it is unsurprising to see very high precision (rounding to 100% in all cases) given the very small possibility of a false negative. While each of the models has shown to provide weak predictive power of precision, it should be noted that the ensemble classifier algorithms provide a high recall. This indicates that they are very good at identifying high credit risk (in the case of the EasyEnsembleClassifier the recall was 91%), but also falsely identifies many low risk individuals as high risk. These false negatives exhibit a loss of potential earnings as they may go elsewhere for lower credit rates that befit their overall risk profile.<br><br>In conclusion, I would not recommend any of the six models to be used for predicting credit risk as consumer banking is a highly competitive and elastic market where overly-conservative lending will present a loss in revenue from potential credit applicants. The work performed to identify the key drivers of credit risk in the BalancedRandomForestClassifier model should be investigated further to develop a simpler model only utilizing the most important features. This would provide a more robust model with simplified input variables that would eliminate random noise introduced by non-significant variables.
